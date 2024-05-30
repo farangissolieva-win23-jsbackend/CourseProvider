@@ -10,6 +10,7 @@ namespace Infrastructure.Factories
 		{
 			return new CourseEntity
 			{
+				Id = Guid.NewGuid().ToString(),
 				ImgUrl = request.ImageUrl,
 				ImgHeaderUrl = request.ImageHeaderUrl,
 				IsDigital = request.IsDigital,
